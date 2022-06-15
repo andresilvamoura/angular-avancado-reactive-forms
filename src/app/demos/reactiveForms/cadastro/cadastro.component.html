@@ -1,41 +1,41 @@
 <div class="container main-container">
     <h4>Demo Cadastro</h4>
     <hr />
-    <form novalidate>
+    <form novalidate (ngSubmit)="adicionarUsuario()" [formGroup]="cadastroForm">
         <div class="form-horizontal">
 
             <div class="form-group">
                 <label class="col-md-2 control-label" for="nome">Nome Completo</label>
                 <div class="col-md-10">
-                    <input class="form-control" id="nome" type="text" placeholder="Nome (requerido)" />
+                    <input class="form-control" id="nome" type="text" placeholder="Nome (requerido)" formControlName="nome"/>
                 </div>
             </div>
 
             <div class="form-group">
                 <label class="col-md-2 control-label">CPF</label>
                 <div class="col-md-10">
-                    <input class="form-control" id="cpf" type="text" placeholder="CPF (requerido)" />
+                    <input class="form-control" id="cpf" type="text" placeholder="CPF (requerido)" formControlName="cpf"/>
                 </div>
             </div>
 
             <div class="form-group">
                 <label class="col-md-2 control-label">E-mail</label>
                 <div class="col-md-10">
-                    <input class="form-control" id="email" type="text" placeholder="E-mail (requerido)" />
+                    <input class="form-control" id="email" type="text" placeholder="E-mail (requerido)" formControlName="email"/>
                 </div>
             </div>
 
             <div class="form-group">
                 <label class="col-md-2 control-label">Senha</label>
                 <div class="col-md-10">
-                    <input class="form-control" id="senha" type="password" placeholder="Senha (requerido)" />
+                    <input class="form-control" id="senha" type="password" placeholder="Senha (requerido)" formControlName="senha"/>
                 </div>
             </div>
 
             <div class="form-group">
                 <label class="col-md-2 control-label">Confirme a Senha</label>
                 <div class="col-md-10">
-                    <input class="form-control" id="senhaConfirmacao" type="password" placeholder="Confirme a Senha (requerido)" />
+                    <input class="form-control" id="senhaConfirmacao" type="password" placeholder="Confirme a Senha (requerido)" formControlName="senhaConfirmacao"/>
                 </div>
             </div>
             <div class="form-group">
