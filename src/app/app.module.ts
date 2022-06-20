@@ -10,12 +10,13 @@ import { CadastroComponent } from './demos/reactiveForms/cadastro/cadastro.compo
 import { NgBrazil, TextMask } from 'ng-brazil';
 import { CustomFormsModule } from 'ng2-validation'
 import { SharedModule } from './navegacao/shared.module';
+import { ProdutoModule } from './demos/arquitetura-componentes/produto.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     SobreComponent,
-    CadastroComponent
+    CadastroComponent,
   ],
   imports: [
     BrowserModule,
@@ -25,7 +26,8 @@ import { SharedModule } from './navegacao/shared.module';
     NgBrazil,
     TextMask.TextMaskModule,
     CustomFormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ProdutoModule
   ],
   providers: [
     {provide: APP_BASE_HREF, useValue: '/'}
