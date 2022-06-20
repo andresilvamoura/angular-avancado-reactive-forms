@@ -13,18 +13,17 @@ import { rootRouterConfig } from './app.routes';
 import { CadastroComponent } from './demos/reactiveForms/cadastro/cadastro.component';
 import { NgBrazil, TextMask } from 'ng-brazil';
 import { CustomFormsModule } from 'ng2-validation'
+import { SharedModule } from './navegacao/shared.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MenuComponent,
-    HomeComponent,
-    FooterComponent,
     SobreComponent,
     CadastroComponent
   ],
   imports: [
     BrowserModule,
+    SharedModule,
     FormsModule,
     ReactiveFormsModule,
     NgBrazil,
